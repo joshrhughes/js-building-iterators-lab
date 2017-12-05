@@ -4,7 +4,15 @@
 function myReduce(arr, callback) {
 
 //  CODE INSIDE HERE   //
+//arr.reduce(callback[, initialValue])//
 
+// callback(accumulator, currentValue, currentIndex, array)
+
+for (var i = 0; i < arr.length; i++) {
+ callback( i++,arr[i], i,arr);
+ console.log(callback( i++,arr[i], i,arr));
+}
+	return ;
 }
 
 /*
